@@ -1,4 +1,4 @@
-require 'open-uri'
+require 'httparty'
 require 'nokogiri'
 
 class Scraping
@@ -8,11 +8,9 @@ class Scraping
     @parsed_content = nil
   end
 
-  def scraper
-    document = open(url)
-    content = document.read
-    parsed_content = Nokogiri::HTML(content)
-    parsed_content.css('.job-list-item').css('.job-details').each do |job|
+  def scraper()
+    @parsed_content = parse_url(@url)
+    @parsed_content.css('.job-list-item').css('.job-details').each do |job|
       # job_description = []
       position = job.css('.position').inner_text.gsub(/\s+/, '')
       company = job.css('.company').inner_text.gsub(/\s+/, '  ')
@@ -21,7 +19,13 @@ class Scraping
       p '______________________________________________________________________________________________________________'
     end
   end
-end
 
-sc = Scraping.new
-sc.scraper
+  private
+
+  def parse_url(url)
+    unparsed_page = HTTParty.get(url)
+    Nokogiri::HTML(unparsed_page)
+  end
+end
+# s = Scraping.new
+# s.scraper
