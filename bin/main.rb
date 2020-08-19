@@ -1,5 +1,4 @@
-require './lib/scraper.rb'
-require 'csv'
+require_relative '../lib/scraper'
 
 def intrduction
   puts 'Welcome to this scraping interface'

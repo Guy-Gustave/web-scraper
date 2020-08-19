@@ -42,7 +42,7 @@ Run the following command:
 
 ### Usage
 
-- inter in directory `cd "directory"`
+- Enter in directory `cd "directory"`
 - Run `ruby bin/main.rb`.
 - Enjoy your curated data!
 
