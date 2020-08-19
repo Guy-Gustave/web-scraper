@@ -18,7 +18,7 @@ describe Scraping do
   describe '#testworks' do
     it 'display all elements of array' do
       tes = scrap.testworks(array)
-      expect(tes).to eq(3)
+      expect(tes).to eq(array)
     end
   end
 end
