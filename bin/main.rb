@@ -1,9 +1,9 @@
 require_relative '../lib/scraper'
 
-def intrduction
+def introduction
   puts 'Welcome to this scraping interface'
   puts 'above are different posts available'
 end
-scrap = Scraping.new
-scrap.scraper
-intrduction
+
+sc = Scraping.new
+sc.scraper
