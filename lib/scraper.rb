@@ -27,7 +27,9 @@ class Scraping
 
   def testworks(posts)
     posts.each { |post| puts post }
+    posts.count
   end
+
 
   private
 
