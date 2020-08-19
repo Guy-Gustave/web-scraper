@@ -24,7 +24,7 @@ class Scraping
     end
     testworks(@job_description)
   end
-  
+
   def testworks(posts)
     posts.each { |post| puts post }
   end
