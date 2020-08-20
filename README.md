@@ -9,7 +9,7 @@ my own web scrapping, a capstone project made at the end of second main technica
 
 ## Video presentation
 
-#### [I present it all to you!] https://www.loom.com/share/38c9bac2990a4e64be08210f0dfe4bd1
+#### [I present it all to you!] https://www.loom.com/share/2d7dce31e79c4fe0a3f284ee4ac424b3
 
 ### Prerequisites
 
